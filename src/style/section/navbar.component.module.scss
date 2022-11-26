@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&family=Work+Sans:wght@300&display=swap");
+
+.Main_nav {
+  background-color: var(--color_black);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+.container {
+  padding: 15px 0;
+}
+.Nav_logo {
+  color: var(--color_secondary) !important;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  &:hover {
+    color: var(--color_secondary) !important;
+  }
+  @media screen and (max-width: 570px) {
+    margin-left: 20px;
+  }
+}
+.hamburger_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 570px) {
+    margin-right: 20px;
+  }
+}
+.hamburger {
+  color: var(--color_white);
+  text-align: center;
+}
+.Nav_links_wrap {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  font-family: "Rubik", sans-serif;
+  font-size: 17px;
+  @media screen and (max-width: 570px) {
+    margin-left: 20px;
+  }
+  .Nav_links {
+    color: lightgrey !important;
+    &:hover {
+      color: #71a6d3 !important;
+    }
+  }
+}
+.Nav_active {
+  color: #71a6d3 !important;
+}

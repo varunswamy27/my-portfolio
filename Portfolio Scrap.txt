@@ -1,0 +1,136 @@
+Html
+
+
+<div className={styles.navbar}>
+      <div className={styles.container}>
+        <div className={styles.navbar_wrap}>
+          <div className={styles.left_logo}>
+            <h1 className={styles.neonText}>VARUN</h1>
+          </div>
+          <div className={styles.right_links}>
+            <p className={styles.links}>Home</p>
+            <p className={styles.links}>Services</p>
+            <p className={styles.links}>About</p>
+            <p className={styles.links}>Testimonials</p>
+            <p className={styles.links}>Contact</p>
+            <p className={styles.ham} onClick={()=>{setIsSmall(!isSmall)}}>HAM</p>
+          </div>
+        </div>
+        {width && 
+        <div className={isSmall ? styles.full_list : styles.full_list2}>
+            <p className={styles.links}>Home</p>
+            <p className={styles.links}>Services</p>
+            <p className={styles.links}>About</p>
+            <p className={styles.links}>Testimonials</p>
+            <p className={styles.links}>Contact</p>
+          </div>
+        }
+      </div>
+    </div>
+
+
+Styles
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&family=Work+Sans:wght@300&display=swap");
+
+
+
+
+
+
+// ...........................................................
+.container {
+  width: 80%;
+  border: 1px solid black;
+  margin: auto;
+}
+.navbar {
+  background-color: #222222;
+  .navbar_wrap {
+    display: flex;
+    border: 1px solid red;
+    // @media screen and (max-width: 700px) {
+    //   flex-wrap: wrap;
+    // }
+    .left_logo {
+      width: 40%;
+      display: flex;
+      border: 1px solid blue;
+      align-items: center;
+      // justify-content: center;
+      .neonText {
+        font-family: "Rubik", sans-serif;
+        animation: flicker 1.5s infinite alternate;
+        color: #fff;
+        font-size: 25px;
+        /* Flickering animation */
+        @keyframes flicker {
+          0%,
+          18%,
+          22%,
+          25%,
+          53%,
+          57%,
+          100% {
+            text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
+              0 0 40px #0fa, 0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa,
+              0 0 150px #0fa;
+          }
+
+          20%,
+          24%,
+          55% {
+            text-shadow: none;
+          }
+        }
+        @media screen and (max-width: 900px) {
+          width: 30%;
+        }
+      }
+    }
+    .right_links {
+      width: 60%;
+      display: flex;
+      border: 1px solid yellow;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      justify-content: space-around;
+      font-family: "Rubik", sans-serif;
+      font-size: 18px;
+      @media screen and (max-width: 900px) {
+        width: 70%;
+      }
+      .links {
+        &:hover {
+          cursor: pointer;
+          color: #71a6d3;
+          // color: #449FDD;
+        }
+        @media screen and (max-width: 700px){
+            display: none;
+        }
+      }
+      .ham{
+        display: none;
+        @media screen and (max-width: 700px){
+            display: block;
+        }
+      }
+    }
+  }
+}
+
+.full_list{
+    display: none;
+    width: 100%;
+    color: white;
+}
+.full_list2{
+    display: block;
+    width: 100%;
+    color: white;
+}

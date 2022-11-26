@@ -1,0 +1,36 @@
+HTML
+
+
+ <!-- <div class="img-container2">
+                            <img src="img/aboutus/double-quotes.png" class="quotes" alt="">
+                        </div>
+                        <div class="img-container">
+                            <img src="img/aboutus/founder.jpg" class="founder-img" alt="">
+                        </div> -->
+
+
+
+SCSS
+
+
+.img-container {
+      // border: 1px solid yellow;
+      position: relative;
+    }
+    .img-container2 {
+      position: absolute;
+      left: 220px;
+      z-index: 10;
+      // border: 1px solid pink;
+      @include md-down {
+        left: 445px;
+        top: 0px;
+      }
+      @include sm-down {
+        left: 275px;
+        top: 0px;
+      }
+    }
+.founder-img {
+      border-radius: 170px;
+    }

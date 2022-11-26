@@ -1,0 +1,120 @@
+.Exp_about {
+  background-color: var(--color_primary);
+  .container {
+    width: 82%;
+    margin: 0 auto;
+  }
+}
+.exp_head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+  .head {
+    font-size: 20px;
+    margin: 0% auto;
+    font-family: "Rubik", sans-serif;
+    color: whitesmoke;
+  }
+  .title {
+    font-size: 35px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    color: var(--color_secondary);
+  }
+}
+
+.exp_wrap {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 970px) {
+    flex-direction: column;
+  }
+  .frontend_info {
+    width: 48%;
+    justify-content: center;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    background-color: var(--color_dark_blue);
+    border-radius: 30px;
+    transition: 0.2s;
+    &:hover {
+      transform: translateY(-15px);
+    }
+    @media screen and (max-width: 970px) {
+      width: 100%;
+      margin: 10px 0;
+    }
+    @media screen and (max-width: 570px) {
+      padding: 30px 5px;
+    }
+  }
+  .backend_info {
+    width: 48%;
+    justify-content: center;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    background-color: var(--color_dark_blue);
+    border-radius: 30px;
+    transition: 0.2s;
+    &:hover {
+      transform: translateY(-15px);
+    }
+    @media screen and (max-width: 970px) {
+      width: 100%;
+      margin: 10px 0;
+    }
+    @media screen and (max-width: 570px) {
+      padding: 30px 5px;
+    }
+  }
+  .exp_title {
+    color: var(--color_secondary);
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+}
+.skill_wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0px 20px;
+  @media screen and (max-width: 570px) {
+    padding: 0px;
+  }
+  .skill_box {
+    display: flex;
+    width: 40%;
+
+    .icon {
+      padding: 0 10px;
+      @media screen and (max-width: 570px) {
+        padding: 0px;
+      }
+      .verified {
+        color: var(--color_secondary);
+        font-size: 22px;
+      }
+    }
+    .skill_info {
+      padding: 0 5px;
+      .skill_name {
+        color: var(--color_white);
+        font-family: "Rubik", sans-serif;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      .skill_level {
+        color: darkgray;
+        font-family: "Rubik", sans-serif;
+      }
+    }
+  }
+}

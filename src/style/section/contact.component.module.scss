@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&family=Rubik:wght@300;600&family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&family=Work+Sans:wght@300&display=swap");
+.Main_contact {
+  background-color: var(--color_primary);
+  .container {
+    width: 82%;
+    margin: 0 auto;
+    // border: 1px solid red;
+  }
+}
+.contact_head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+  .head {
+    font-size: 20px;
+    margin: 0% auto;
+    font-family: "Rubik", sans-serif;
+    color: whitesmoke;
+  }
+  .title {
+    font-size: 35px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    color: var(--color_secondary);
+  }
+}
+
+.contact_wrap {
+  // border: 1px solid red;
+  display: flex;
+  //   height: 100px;
+  @media screen and (max-width: 770px) {
+    flex-direction: column;
+  }
+  .contact_left {
+    // border: 1px solid white;
+    width: 45%;
+    @media screen and (max-width: 770px) {
+      width: 100%;
+    }
+    .contact_media {
+      width: 80%;
+      // height: 100px;
+      margin: auto;
+      margin-bottom: 25px;
+      background-color: var(--color_dark_blue);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px 10px;
+      transition: 0.2s;
+      &:hover{
+        background-color: rgba(43, 43, 106, 0.7);
+        border: 1px solid var(--color_secondary);
+      }
+      .icon {
+        color: var(--color_white);
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
+      .social {
+        font-weight: 600;
+        font-family: "Rubik", sans-serif;
+        color: var(--color_white);
+        font-size: 20px;
+        margin: 0%;
+      }
+      .account {
+        font-weight: 600;
+        font-family: "Rubik", sans-serif;
+        color: var(--color_white);
+        font-size: 16px;
+        margin: 0%;
+      }
+      .send {
+        color: var(--color_secondary);
+        font-weight: 600;
+        font-family: "Rubik", sans-serif;
+        font-size: 15px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .contact_right {
+    width: 55%;
+    // border: 1px solid white;
+    @media screen and (max-width: 770px) {
+      width: 100%;
+    }
+    .contact_input {
+      width: 80%;
+      margin-bottom: 20px;
+      background-color: transparent;
+      border: 1px solid var(--color_secondary);
+      padding: 15px;
+      border-radius: 8px;
+      color: var(--color_white);
+      outline: none;
+      &::placeholder {
+        color: lightgray;
+      }
+      @media screen and (max-width: 770px) {
+        width: 100%;
+      }
+    }
+    .contact_btn {
+      background-color: transparent;
+      border: 1px solid var(--color_secondary);
+      border-radius: 6px;
+      margin: 10px 0;
+      margin-right: 10px;
+      padding: 9px 20px;
+      color: var(--color_secondary);
+      transition: 0.2s;
+      &:hover {
+        background-color: var(--color_secondary);
+        color: #201e39;
+      }
+    }
+  }
+}

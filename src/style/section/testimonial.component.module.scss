@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&family=Rubik:wght@300;600&family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&family=Work+Sans:wght@300&display=swap");
+.Main_test {
+  background-color: var(--color_primary);
+  .container {
+    width: 82%;
+    margin: 0 auto;
+    // border: 1px solid red;
+  }
+}
+
+.Test_head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+  .head {
+    font-size: 20px;
+    margin: 0% auto;
+    font-family: "Rubik", sans-serif;
+    color: whitesmoke;
+  }
+  .title {
+    font-size: 35px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    color: var(--color_secondary);
+  }
+}
+
+.test_box {
+  //   width: 300px;
+  //   height: 200px;
+  //   border: 1px solid grey;
+  padding: 0 15px;
+  .test_main {
+    width: 100%;
+    height: 100%;
+    // border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: var(--color_dark_blue);
+    .test_img {
+      width: 80px;
+      height: 80px;
+      border: 8px solid var(--color_secondary);
+      border-radius: 40px;
+      margin: 10px 0;
+    }
+    .test_name {
+      font-size: 20px;
+      margin: 10px 0;
+      font-family: "Rubik", sans-serif;
+      color: var(--color_white);
+      font-weight: 600;
+    }
+    .test_desp {
+      font-size: 17px;
+      font-family: "Rubik", sans-serif;
+      color: lightgray;
+      margin-top: 10px;
+    }
+  }
+}
+.arrow_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+//   border: 1px solid white;
+  padding: 20px 0;
+  .test_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 30px;
+    border: 3px solid var(--color_secondary);
+    margin: 10px;
+    transition: 0.2s;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 5px var(--color_secondary);
+    }
+    .icon {
+      font-size: 20px;
+      // color: #4cadf3 !important;
+      color: var(--color_white) !important;
+    }
+  }
+}

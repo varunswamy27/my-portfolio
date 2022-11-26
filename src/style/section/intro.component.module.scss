@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&family=Rubik:wght@300;600&family=Work+Sans:wght@300&display=swap');
+
+.Main_intro{
+    margin-top: 50px;
+    .container{
+        width: 82%;
+        margin: 0 auto;
+    }
+}
+.intro_wrap{
+    display: flex;
+    @media screen and (max-width: 770px) {
+        flex-direction: column;
+      }
+}
+.left_info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    .button_wrap{
+        .btn_intro{
+            background-color: transparent;
+            border: 1px solid var(--color_secondary);
+            padding: 10px 15px;
+            border-radius: 7px;
+            margin: 12px 10px;
+            color: var(--color_secondary);
+            font-weight: 500;
+            transition: 0.2s ease-in;
+            &:hover{
+                background-color: var(--color_secondary);
+                color: var(--color_primary);
+            }
+
+        }
+    }
+}
+.intro_text{
+    font-size: 40px;
+    margin: 0% auto;
+    color: var(--color_white);
+    font-family: 'Oswald', sans-serif;
+    @media screen and (max-width: 570px) {
+        font-size: 35px;
+    }
+}
+.name_text{
+    font-size: 50px;
+    margin: 0 auto;
+    color: var(--color_white);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    @media screen and (max-width: 570px) {
+        font-size: 42px;
+    }
+}
+.mern_text{
+    font-size: 25px;
+    color: lightgray;
+    font-family: 'Oswald', sans-serif;
+    @media screen and (max-width: 570px) {
+        font-size: 22px;
+    }
+}
+.right_info{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    .image_wrap{
+        width: 300px;
+        height: 400px;
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+        overflow: hidden;
+        background-color: lightcyan;
+        @media screen and (max-width: 570px) {
+            width: 80%;
+          }
+    }
+}

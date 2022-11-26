@@ -1,0 +1,19 @@
+.marque_main {
+  overflow: hidden;
+}
+.img_marque {
+  width: 120px;
+  margin: 20px 25px;
+  transition: 0.2s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  @media screen and (max-width: 970px) {
+    width: 100px;
+  }
+  @media screen and (max-width: 670px) {
+    width: 90px;
+    margin: 20px 20px;
+  }
+}

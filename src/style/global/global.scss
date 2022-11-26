@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+// COLORS.................................
+:root{
+  --color_primary: #201e39;
+  --color_secondary: #4cadf3;
+  --color_dark_blue: #2b2b6a;
+  --color_black: #222222;
+  --color_white: white;
+}
+a {
+  text-decoration: none;
+}
+.main_section {
+  background-color: #201e39;
+}
+.Container {
+  width: 82%;
+  margin: 0 auto;
+  @media screen and (max-width: 770px) {
+    width: 90%;
+  }
+}
+.section_spacing {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.section_spacing_bottom {
+  padding-bottom: 50px;
+}
+.active_footer {
+  margin: 20px;
+  text-decoration: none !important;
+  color: #3b3bb6;
+  font-weight: 500;
+  font-size: 18px;
+}
+.img_responsive {
+  width: 100%;
+  overflow: hidden;
+}
