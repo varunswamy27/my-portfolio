@@ -46,6 +46,10 @@
     width: 48%;
     padding: 16px;
   }
+  @media screen and (max-width: 570px) {
+    width: 100%;
+    padding: 16px;
+  }
 }
 .image_box {
   border-radius: 20px;
@@ -74,6 +78,7 @@
 .overlap_info {
   color: var(--color_white);
   font-size: 20px;
+  font-family: "Rubik", sans-serif;
 }
 
 .portfolio_info {
