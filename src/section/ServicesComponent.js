@@ -5,13 +5,13 @@ import { BsCheck2 } from "react-icons/bs";
 const ServicesComponent = () => {
   return (
     <div id="Services" className="main_section section_spacing">
-      <div className={styles.exp_head}>
+      <div className={`${styles.exp_head} fadeInUp`}>
         <p className={styles.head}>What I Offer</p>
         <p className={styles.title}>Services</p>
       </div>
       <div className="Container">
         <div className={styles.service_wrap}>
-          <div className={styles.service_box}>
+          <div className={`${styles.service_box} fadeInUp`}>
             <div className={styles.service_title}>
               <p className={styles.title2}>Web Development</p>
             </div>
@@ -46,7 +46,7 @@ const ServicesComponent = () => {
               </div>
             </div>
           </div>
-          <div className={styles.service_box}>
+          <div className={`${styles.service_box} fadeInUp`}>
             <div className={styles.service_title}>
               <p className={styles.title2}>SEO</p>
             </div>
@@ -91,7 +91,7 @@ const ServicesComponent = () => {
               </div>
             </div>
           </div>
-          <div className={styles.service_box}>
+          <div className={`${styles.service_box} fadeInUp`}>
             <div className={styles.service_title}>
               <p className={styles.title2}>Mobile Development</p>
             </div>

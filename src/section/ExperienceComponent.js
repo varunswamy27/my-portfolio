@@ -3,6 +3,7 @@ import styles from "../style/section/experience.component.module.scss";
 import { MdVerified } from 'react-icons/md';
 
 
+
 const ExperienceComponent = () => {
   return (
     <div className="main_section section_spacing">
@@ -12,7 +13,7 @@ const ExperienceComponent = () => {
       </div>
       <div className='Container'>
       <div className={styles.exp_wrap}>
-      <div className={styles.frontend_info}>
+      <div className={`${styles.frontend_info} fadeInUp`}>
         <div className={styles.exp_title}>
           Frontend Development
         </div>
@@ -77,7 +78,7 @@ const ExperienceComponent = () => {
           </div>
         </div>
       </div>
-      <div className={styles.backend_info}>
+      <div className={`${styles.backend_info} fadeInUp`}>
       <div className={styles.exp_title}>
           Backend Development
         </div>

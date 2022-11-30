@@ -7,13 +7,13 @@ import dashboard from "../images/projects/Dashboard.jpg";
 const PortfolioComponent = () => {
   return (
     <div className="main_section section_spacing">
-      <div className={styles.portfolio_head}>
+      <div className={`${styles.portfolio_head} fadeInUp`}>
         <p className={styles.head}>My Recent Work</p>
         <p className={styles.title}>Portfolio</p>
       </div>
       <div className="Container">
         <div className={styles.portfolio_wrap}>
-          <div className={styles.portfolio_box}>
+          <div className={`${styles.portfolio_box} fadeInUp`}>
             <div className={styles.image_box}>
               <img className={`${styles.project_img} img_responsive`} src={lusion} alt="Lusion" />
               <div className={styles.overlap}>
@@ -30,7 +30,7 @@ const PortfolioComponent = () => {
               </a>
             </div>
           </div>
-          <div className={styles.portfolio_box}>
+          <div className={`${styles.portfolio_box} fadeInUp`}>
             <div className={styles.image_box}>
               <img
                 className={`${styles.project_img} img_responsive`}
@@ -58,7 +58,7 @@ const PortfolioComponent = () => {
               </a>
             </div>
           </div>
-          <div className={styles.portfolio_box}>
+          <div className={`${styles.portfolio_box} fadeInUp`}>
             <div className={styles.image_box}>
               <img
                 className={`${styles.project_img} img_responsive`}

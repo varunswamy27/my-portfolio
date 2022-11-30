@@ -8,9 +8,9 @@ const IntroComponent = () => {
     <div id="Home" className={`${styles.Main_intro} main_section section_spacing`}>
       <div className='Container section_spacing'>
         <div className={styles.intro_wrap}>
-          <div className={styles.left_info}>
-            <p className={styles.intro_text}>HI I'M</p>
-            <div className={styles.name_text}>
+          <div className={`${styles.left_info}`}>
+            <p className={`${styles.intro_text} fadeInUp`}>HI I'M</p>
+            <div className={`${styles.name_text} fadeInUp`}>
               <Typewriter
                 options={{
                   autoStart: true,
@@ -21,14 +21,14 @@ const IntroComponent = () => {
                 }}
               />
             </div>
-            <p className={styles.mern_text}>FULLSTACK DEVELOPER</p>
-            <div className={styles.button_wrap}>
+            <p className={`${styles.mern_text} fadeInUp`}>FULLSTACK DEVELOPER</p>
+            <div className={`${styles.button_wrap} fadeInUp`}>
               <a href={CV} download><button className={styles.btn_intro}>Download CV</button></a>
               <button className={styles.btn_intro}>Let's Talk</button>
             </div>
           </div>
           <div className={styles.right_info}>
-            <div className={styles.image_wrap}></div>
+            <div className={`${styles.image_wrap} fadeInUp`}></div>
           </div>
         </div>
       </div>

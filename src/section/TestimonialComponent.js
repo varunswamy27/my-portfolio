@@ -4,9 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useRef } from "react";
-import { FcNext } from 'react-icons/fc';
-import { FcPrevious } from 'react-icons/fc';
-
+import { FcNext } from "react-icons/fc";
+import { FcPrevious } from "react-icons/fc";
 
 const TestimonialComponent = () => {
   const slider = useRef();
@@ -51,12 +50,12 @@ const TestimonialComponent = () => {
   };
   return (
     <div id="Testimonials" className="main_section section_spacing">
-      <div className={styles.Test_head}>
+      <div className={`${styles.Test_head} fadeInUp`}>
         <p className={styles.head}>Review From Clients</p>
         <p className={styles.title}>Testimonials</p>
       </div>
       <div className="Container">
-        <Slider ref={slider} {...settings}>
+        <Slider className="fadeInUp" ref={slider} {...settings}>
           <div className={styles.test_box}>
             <div className={styles.test_main}>
               <div className={styles.test_img}></div>
@@ -105,11 +104,21 @@ const TestimonialComponent = () => {
               </p>
             </div>
           </div>
-       </Slider>
-       <div className={styles.arrow_wrap}>
-        <div className={styles.test_btn} onClick={() => slider?.current?.slickPrev()}><FcPrevious className={styles.icon}/></div>
-        <div className={styles.test_btn} onClick={() => slider?.current?.slickNext()}><FcNext className={styles.icon}/></div>
+        </Slider>
+        <div className={`${styles.arrow_wrap} fadeInUp`}>
+          <div
+            className={styles.test_btn}
+            onClick={() => slider?.current?.slickPrev()}
+          >
+            <FcPrevious className={styles.icon} />
           </div>
+          <div
+            className={styles.test_btn}
+            onClick={() => slider?.current?.slickNext()}
+          >
+            <FcNext className={styles.icon} />
+          </div>
+        </div>
       </div>
     </div>
   );

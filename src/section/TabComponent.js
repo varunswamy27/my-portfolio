@@ -10,7 +10,7 @@ const TabComponent = () => {
 
   return (
     <>
-      <div className={styles.tab_panel}>
+      <div className={`${styles.tab_panel} fadeInUp`}>
         <div
           className={toggleState === 1 ? styles.tab_btn_active : styles.tab_btn}
           onClick={() => {
@@ -44,7 +44,7 @@ const TabComponent = () => {
       </div>
       <div
         className={
-          toggleState === 1 ? styles.tab_active_info : styles.tab_none_info
+          toggleState === 1 ? `${styles.tab_active_info} fadeInUp` : styles.tab_none_info
         }
       >
         <p className={styles.tab_full_desp}>
@@ -59,7 +59,7 @@ const TabComponent = () => {
       </div>
       <div
         className={
-          toggleState === 2 ? styles.tab_active_info : styles.tab_none_info
+          toggleState === 2 ? `${styles.tab_active_info} fadeInUp` : styles.tab_none_info
         }
       >
         <p className={styles.tab_full_desp}>
@@ -72,7 +72,7 @@ const TabComponent = () => {
       </div>
       <div
         className={
-          toggleState === 3 ? styles.tab_active_info : styles.tab_none_info
+          toggleState === 3 ? `${styles.tab_active_info} fadeInUp` : styles.tab_none_info
         }
       >
         <p className={styles.tab_full_desp}>

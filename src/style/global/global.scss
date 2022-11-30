@@ -44,3 +44,43 @@ a {
   width: 100%;
   overflow: hidden;
 }
+
+.fadeInUp {
+  &[data-scroll] {
+    transition: all 0.8s ease-out;
+  }
+  &[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  &[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+.fadeInLeft {
+  &[data-scroll] {
+    transition: all 0.8s ease-out;
+  }
+  &[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  &[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
+.fadeInRight {
+  &[data-scroll] {
+    transition: all 0.8s ease-out;
+  }
+  &[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  &[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+}

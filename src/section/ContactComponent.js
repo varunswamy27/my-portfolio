@@ -7,14 +7,14 @@ import { BsWhatsapp } from "react-icons/bs";
 const ContactComponent = () => {
   return (
     <div id="Contact" className="main_section section_spacing">
-      <div className={styles.contact_head}>
+      <div className={`${styles.contact_head} fadeInUp`}>
         <p className={styles.head}>Get In Touch</p>
         <p className={styles.title}>Contact Me</p>
       </div>
       <div className={`Container`}>
         <div className={styles.contact_wrap}>
           <div className={styles.contact_left}>
-            <div className={styles.contact_media}>
+            <div className={`${styles.contact_media} fadeInUp`}>
               <AiOutlineMail className={styles.icon} />
               <p className={styles.social}>Email</p>
               <p className={styles.account}>varunswamy27@gmail.com</p>
@@ -27,7 +27,7 @@ const ContactComponent = () => {
                 </a>
               </p>
             </div>
-            <div className={styles.contact_media}>
+            <div className={`${styles.contact_media} fadeInUp`}>
               <AiFillLinkedin className={styles.icon} />
               <p className={styles.social}>LinkedIn</p>
               <p className={styles.account}>varunswamy27@gmail.com</p>
@@ -41,7 +41,7 @@ const ContactComponent = () => {
                 </a>
               </p>
             </div>
-            <div className={styles.contact_media}>
+            <div className={`${styles.contact_media} fadeInUp`}>
               <BsWhatsapp className={styles.icon} />
               <p className={styles.social}>WhatsApp</p>
               <p className={styles.account}>+91 8097531709</p>
@@ -59,24 +59,24 @@ const ContactComponent = () => {
           <div className={styles.contact_right}>
             <form>
               <input
-                className={styles.contact_input}
+                className={`${styles.contact_input} fadeInUp`}
                 type="text"
                 placeholder="Your Full Name"
               />
               <input
-                className={styles.contact_input}
+                className={`${styles.contact_input} fadeInUp`}
                 type="text"
                 placeholder="Your Email"
               />
               <textarea
-                className={styles.contact_input}
+                className={`${styles.contact_input} fadeInUp`}
                 name=""
                 id=""
                 rows="8"
                 placeholder="Your Message"
               ></textarea>
               <br />
-              <button className={styles.contact_btn}>Send Message</button>
+              <button className={`${styles.contact_btn} fadeInUp`}>Send Message</button>
             </form>
           </div>
         </div>
