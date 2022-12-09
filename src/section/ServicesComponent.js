@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../style/section/services.component.module.scss";
 import { BsCheck2 } from "react-icons/bs";
+import Tilt from "react-parallax-tilt";
 
 const ServicesComponent = () => {
   return (
@@ -11,121 +12,138 @@ const ServicesComponent = () => {
       </div>
       <div className="Container">
         <div className={styles.service_wrap}>
-          <div className={`${styles.service_box} fadeInUp`}>
-            <div className={styles.service_title}>
-              <p className={styles.title2}>Web Development</p>
-            </div>
-            <div className={styles.inside_wrap}>
-              <div className={styles.tick}>
-                <BsCheck2 style={{ marginTop: "0px" }} />
+          <Tilt gyroscope={true} className={styles.tilt}>
+            <div className={`${styles.service_box} fadeInUp`}>
+              <div className={styles.service_title}>
+                <p className={styles.title2}>Web Development</p>
               </div>
-              <div className={styles.info_service}>
-                <p>
-                  In publishing and graphic design, Lorem ipsum is a placeholder
-                </p>
+              <div className={styles.inside_wrap}>
+                <div className={styles.tick}>
+                  <BsCheck2 style={{ marginTop: "0px" }} />
+                </div>
+                <div className={styles.info_service}>
+                  <p>
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className={styles.inside_wrap}>
-              <div className={styles.tick}>
-                <BsCheck2 style={{ marginTop: "0px" }} />
+              <div className={styles.inside_wrap}>
+                <div className={styles.tick}>
+                  <BsCheck2 style={{ marginTop: "0px" }} />
+                </div>
+                <div className={styles.info_service}>
+                  <p>
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder
+                  </p>
+                </div>
               </div>
-              <div className={styles.info_service}>
-                <p>
-                  In publishing and graphic design, Lorem ipsum is a placeholder
-                </p>
-              </div>
-            </div>
-            <div className={styles.inside_wrap}>
-              <div className={styles.tick}>
-                <BsCheck2 style={{ marginTop: "0px" }} />
-              </div>
-              <div className={styles.info_service}>
-                <p>
-                  In publishing and graphic design, Lorem ipsum is a placeholder
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className={`${styles.service_box} fadeInUp`}>
-            <div className={styles.service_title}>
-              <p className={styles.title2}>SEO</p>
-            </div>
-            <div className={styles.inside_wrap}>
-              <div className={styles.tick}>
-                <BsCheck2 style={{ marginTop: "0px" }} />
-              </div>
-              <div className={styles.info_service}>
-                <p>
-                  In publishing and graphic design, Lorem ipsum is a placeholder
-                </p>
+              <div className={styles.inside_wrap}>
+                <div className={styles.tick}>
+                  <BsCheck2 style={{ marginTop: "0px" }} />
+                </div>
+                <div className={styles.info_service}>
+                  <p>
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder
+                  </p>
+                </div>
               </div>
             </div>
-            <div className={styles.inside_wrap}>
-              <div className={styles.tick}>
-                <BsCheck2 style={{ marginTop: "0px" }} />
+          </Tilt>
+          <Tilt className={styles.tilt}>
+            <div className={`${styles.service_box} fadeInUp`}>
+              <div className={styles.service_title}>
+                <p className={styles.title2}>SEO</p>
               </div>
-              <div className={styles.info_service}>
-                <p>
-                  In publishing and graphic design, Lorem ipsum is a placeholder
-                </p>
+              <div className={styles.inside_wrap}>
+                <div className={styles.tick}>
+                  <BsCheck2 style={{ marginTop: "0px" }} />
+                </div>
+                <div className={styles.info_service}>
+                  <p>
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className={styles.inside_wrap}>
-              <div className={styles.tick}>
-                <BsCheck2 style={{ marginTop: "0px" }} />
+              <div className={styles.inside_wrap}>
+                <div className={styles.tick}>
+                  <BsCheck2 style={{ marginTop: "0px" }} />
+                </div>
+                <div className={styles.info_service}>
+                  <p>
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder
+                  </p>
+                </div>
               </div>
-              <div className={styles.info_service}>
-                <p>
-                  In publishing and graphic design, Lorem ipsum is a placeholder
-                </p>
+              <div className={styles.inside_wrap}>
+                <div className={styles.tick}>
+                  <BsCheck2 style={{ marginTop: "0px" }} />
+                </div>
+                <div className={styles.info_service}>
+                  <p>
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className={styles.inside_wrap}>
-              <div className={styles.tick}>
-                <BsCheck2 style={{ marginTop: "0px" }} />
-              </div>
-              <div className={styles.info_service}>
-                <p>
-                  In publishing and graphic design, Lorem ipsum is a placeholder
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className={`${styles.service_box} fadeInUp`}>
-            <div className={styles.service_title}>
-              <p className={styles.title2}>Mobile Development</p>
-            </div>
-            <div className={styles.inside_wrap}>
-              <div className={styles.tick}>
-                <BsCheck2 style={{ marginTop: "0px" }} />
-              </div>
-              <div className={styles.info_service}>
-                <p>
-                  In publishing and graphic design, Lorem ipsum is a placeholder
-                </p>
-              </div>
-            </div>
-            <div className={styles.inside_wrap}>
-              <div className={styles.tick}>
-                <BsCheck2 style={{ marginTop: "0px" }} />
-              </div>
-              <div className={styles.info_service}>
-                <p>
-                  In publishing and graphic design, Lorem ipsum is a placeholder
-                </p>
+              <div className={styles.inside_wrap}>
+                <div className={styles.tick}>
+                  <BsCheck2 style={{ marginTop: "0px" }} />
+                </div>
+                <div className={styles.info_service}>
+                  <p>
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder
+                  </p>
+                </div>
               </div>
             </div>
-            <div className={styles.inside_wrap}>
-              <div className={styles.tick}>
-                <BsCheck2 style={{ marginTop: "0px" }} />
+          </Tilt>
+
+          <Tilt className={styles.tilt}>
+            <div className={`${styles.service_box} fadeInUp`}>
+              <div className={styles.service_title}>
+                <p className={styles.title2}>Mobile Development</p>
               </div>
-              <div className={styles.info_service}>
-                <p>
-                  In publishing and graphic design, Lorem ipsum is a placeholder
-                </p>
+              <div className={styles.inside_wrap}>
+                <div className={styles.tick}>
+                  <BsCheck2 style={{ marginTop: "0px" }} />
+                </div>
+                <div className={styles.info_service}>
+                  <p>
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder
+                  </p>
+                </div>
+              </div>
+              <div className={styles.inside_wrap}>
+                <div className={styles.tick}>
+                  <BsCheck2 style={{ marginTop: "0px" }} />
+                </div>
+                <div className={styles.info_service}>
+                  <p>
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder
+                  </p>
+                </div>
+              </div>
+              <div className={styles.inside_wrap}>
+                <div className={styles.tick}>
+                  <BsCheck2 style={{ marginTop: "0px" }} />
+                </div>
+                <div className={styles.info_service}>
+                  <p>
+                    In publishing and graphic design, Lorem ipsum is a
+                    placeholder
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </Tilt>
         </div>
       </div>
     </div>
