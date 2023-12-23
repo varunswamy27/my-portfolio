@@ -52,7 +52,7 @@ const ServicesComponent = () => {
               </div>
             </div>
           </Tilt>
-          <Tilt className={styles.tilt}>
+          <Tilt  gyroscope={true} className={styles.tilt}>
             <div className={`${styles.service_box} fadeInUp`}>
               <div className={styles.service_title}>
                 <p className={styles.title2}>SEO</p>
@@ -104,7 +104,7 @@ const ServicesComponent = () => {
             </div>
           </Tilt>
 
-          <Tilt className={styles.tilt}>
+          <Tilt  gyroscope={true} className={styles.tilt}>
             <div className={`${styles.service_box} fadeInUp`}>
               <div className={styles.service_title}>
                 <p className={styles.title2}>Mobile Development</p>

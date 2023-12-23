@@ -5,6 +5,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 
 const ContactComponent = () => {
+  console.log("Works");
   return (
     <div id="Contact" className="main_section section_spacing">
       <div className={`${styles.contact_head} fadeInUp`}>
@@ -76,7 +77,9 @@ const ContactComponent = () => {
                 placeholder="Your Message"
               ></textarea>
               <br />
-              <button className={`${styles.contact_btn} fadeInUp`}>Send Message</button>
+              <button className={`${styles.contact_btn} fadeInUp`}>
+                Send Message
+              </button>
             </form>
           </div>
         </div>
