@@ -58,8 +58,14 @@ const ContactComponent = () => {
             </div>
           </div>
           <div className={styles.contact_right}>
-            <form name="Contact" method="POST" netlify>
-              <input type="hidden" name="form-name" value="Contact" />
+            <form
+              name="contact"
+              method="POST"
+              netlify
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="contact" />
               <input
                 className={`${styles.contact_input} fadeInUp`}
                 type="text"
