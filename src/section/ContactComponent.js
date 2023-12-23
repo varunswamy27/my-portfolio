@@ -58,7 +58,8 @@ const ContactComponent = () => {
             </div>
           </div>
           <div className={styles.contact_right}>
-            <form>
+            <form name="Contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="Contact" />
               <input
                 className={`${styles.contact_input} fadeInUp`}
                 type="text"
@@ -77,7 +78,10 @@ const ContactComponent = () => {
                 placeholder="Your Message"
               ></textarea>
               <br />
-              <button className={`${styles.contact_btn} fadeInUp`}>
+              <button
+                type="submit"
+                className={`${styles.contact_btn} fadeInUp`}
+              >
                 Send Message
               </button>
             </form>
