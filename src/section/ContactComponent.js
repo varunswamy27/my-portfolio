@@ -58,7 +58,7 @@ const ContactComponent = () => {
             </div>
           </div>
           <div className={styles.contact_right}>
-            <form name="Contact" method="POST" data-netlify="true">
+            <form name="Contact" method="POST" netlify>
               <input type="hidden" name="form-name" value="Contact" />
               <input
                 className={`${styles.contact_input} fadeInUp`}
