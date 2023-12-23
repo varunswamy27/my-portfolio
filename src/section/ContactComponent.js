@@ -63,18 +63,21 @@ const ContactComponent = () => {
               <input
                 className={`${styles.contact_input} fadeInUp`}
                 type="text"
+                name="FullName"
                 placeholder="Your Full Name"
               />
               <input
                 className={`${styles.contact_input} fadeInUp`}
-                type="text"
+                type="email"
+                name="Email"
                 placeholder="Your Email"
               />
               <textarea
                 className={`${styles.contact_input} fadeInUp`}
-                name=""
+                name="Message"
                 id=""
                 rows="8"
+                type="text"
                 placeholder="Your Message"
               ></textarea>
               <br />
